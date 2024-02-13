@@ -1,0 +1,17 @@
+.data-form {
+  display: flex;
+
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: flex-start;
+
+  gap: 5px;
+  padding: 5px;
+}
+
+.data-form .tool-form {
+  flex-basis: 50%;
+  max-width: 800px;
+  padding: 0px;
+}
