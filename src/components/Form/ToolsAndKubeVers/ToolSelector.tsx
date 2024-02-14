@@ -1,7 +1,7 @@
 import { ComponentProps } from "react";
 import Select from "react-select";
-import { useGlobalConfigContext } from "../../../contexts/GlobalConfig";
-import { opt, strToOpt } from "../../../types";
+import { useGlobalConfigContext } from "@/contexts/GlobalConfig";
+import { opt, strToOpt } from "@/types";
 
 interface IToolSelector {
   options: ComponentProps<typeof Select>["options"];

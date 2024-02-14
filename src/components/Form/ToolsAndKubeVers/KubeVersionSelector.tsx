@@ -1,7 +1,8 @@
 import { ComponentProps } from "react";
-import SelectorWithIcon from "../../Elements/SelectWithIcon";
-import { useGlobalConfigContext } from "../../../contexts/GlobalConfig";
-import kubeIcon from "../../../assets/kubernetes-icon-color.svg";
+import { useGlobalConfigContext } from "@/contexts/GlobalConfig";
+
+import SelectorWithIcon from "@/components/Elements/SelectWithIcon";
+import kubeIcon from "@/assets/kubernetes-icon-color.svg";
 
 interface IToolForm {
   options: ComponentProps<typeof SelectorWithIcon>["options"];
