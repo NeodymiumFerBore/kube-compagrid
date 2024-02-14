@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ToolsAndKubeVers } from "./components/Form/ToolsAndKubeVers";
+import { CompatTable } from "./components/CompatTable";
 import "./css/index.css";
 
 import { loadFromLocalStorage } from "./utils/loadFromLocalStorage";
@@ -24,7 +25,8 @@ export default function App() {
       <GlobalConfigContext.Provider value={{ globalConfig, setGlobalConfig }}>
         <ToolsAndKubeVers />
         {/* Table div */}
-        <div id="compat-table-wrapper"></div>
+        <CompatTable />
+        {/* <div id="compat-table-wrapper"></div> */}
       </GlobalConfigContext.Provider>
     </>
   );
