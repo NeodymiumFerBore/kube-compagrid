@@ -10,7 +10,10 @@ import { GlobalConfig, GlobalConfigContext } from "./contexts/GlobalConfig.ts";
 
 export default function App() {
   const [globalConfig, setGlobalConfig] = useState<GlobalConfig>(
-    loadFromLocalStorage<GlobalConfig>("GLOBAL_CONFIG")
+    loadFromLocalStorage<GlobalConfig>("GLOBAL_CONFIG", {
+      selectedKubeVers: "",
+      selectedTools: [],
+    })
   );
 
   useEffect(() => {

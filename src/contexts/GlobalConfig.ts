@@ -18,7 +18,10 @@ type TGlobalConfigContext = {
 
 /* Define the actual GlobalConfig Context */
 export const GlobalConfigContext = createContext<TGlobalConfigContext>({
-  globalConfig: {} as GlobalConfig,
+  globalConfig: {
+    selectedKubeVers: "",
+    selectedTools: [],
+  },
   setGlobalConfig: () => {},
 });
 
